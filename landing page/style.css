@@ -1,0 +1,217 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: black;
+    font-family: Arial, sans-serif; 
+}
+
+.navbar {
+    margin-top: 0;
+    padding-top: 0;
+    background-color: rgb(5, 5, 25);
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1%;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar h1 {
+    margin: 0;
+    padding-right: 20px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    color: white;
+    cursor: pointer;
+}
+
+.magnifier {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-left: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.magnifier:focus {
+    transform: scale(1.1);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.signin {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    position: relative;
+    top: 5px;
+}
+
+.eng {
+    margin-left: 10px;
+    position: relative;
+}
+
+.joinprime {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+}
+
+.joinprime:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+.navbar h1:hover,
+.navbar ul li:hover,
+.subscription:hover,
+.magnifier:hover,
+.signin:hover,
+.eng:hover {
+    color: #00bfff;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.signin:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.navbar ul li:not(.joinprime):not(.subscription):not(.eng):not(.magnifier):not(.signin):hover {
+    background-color: white;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.main {
+    background-color: black;
+}
+
+.nextdiv {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    background-image: url();
+}
+
+.welcometoprime {
+    position: relative;
+    left: 30px;
+    top: 75px;
+    padding: 10px;
+    font-size: 2.5em;
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.p1 {
+    position: relative;
+    left: 30px;
+    top: 70px;
+    padding: 10px;
+}
+
+.p2 {
+    position: relative;
+    left: 30px;
+    top: 60px;
+    padding: 10px;
+}
+
+.button1 {
+    position: relative;
+    padding: 20px 30px;
+    top: 60px;
+    left: 30px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid #00bfff;
+    color: #00bfff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.button1:hover {
+    background-color: rgba(0, 191, 255, 0.1);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
+    color: white;
+    border-color: #ff4500;
+}
+
+.button1:active {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(0, 191, 255, 0.5);
+}
+
+.img1, .img2, .img3 {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.img1:hover, .img2:hover, .img3:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(0, 191, 255, 0.6);
+    opacity: 0.8;
+}
+
+.img1:hover {
+    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 0 10px 20px rgba(255, 69, 0, 0.6);
+}
+
+.img2:hover {
+    transform: scale(1.1) rotate(0deg);
+    box-shadow: 0 10px 20px rgba(0, 191, 255, 0.8);
+}
+
+.img3:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(255, 69, 0, 0.6);
+}
+
+.img1, .img2, .img3 {
+    cursor: pointer;
+}
+
+.imagecontainer {
+    position: relative;
+    left: 620px;
+    bottom: 300px;
+}
+
+.img2 {
+    top: 50px;
+}
